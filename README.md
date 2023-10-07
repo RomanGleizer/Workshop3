@@ -147,11 +147,6 @@ public class EnemyDragon : MonoBehaviour
     public float timeBetweenEggDrops;
     public float chanceDirection;
 
-    private void Awake()
-    {
-        StartCoroutine(parser.ParseGoogleSheets());
-    }
-
     private void Start()
     {
         Invoke(nameof(Initialize), 1f);
